@@ -1,0 +1,17 @@
+*{
+    background-color: aliceblue;
+    padding: 0%;
+}
+body{
+    text-align: center;
+    margin: 5%;
+
+}
+.heading{
+    text-align: center;
+}
+button{
+    color: gray;
+    background-color: yellow;
+}
+

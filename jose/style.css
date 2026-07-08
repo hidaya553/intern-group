@@ -1,0 +1,29 @@
+*{
+    background-color: antiquewhite;
+    padding: 0;
+
+}
+.heading{
+    text-align: center;
+
+}
+button{
+    color: black;
+    background-color: gray;
+    
+}
+footer{
+    text-align: center;
+    text-decoration: none;
+
+
+}
+footer p{
+    background-color: brown;
+}
+nav a{
+    justify-content: space-between;
+    padding: 10px 8px;
+    align-items: center;
+    
+}

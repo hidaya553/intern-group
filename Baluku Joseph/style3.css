@@ -1,0 +1,54 @@
+html { scroll-behavior: smooth; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+.container { width: 90%; max-width: 800px; margin: auto; }
+
+/* Fixed Navigation */
+header { 
+    position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
+    background: #1e293b; padding: 20px 0; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); border-bottom: 2px solid #3b82f6; 
+}
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav a { text-decoration: none; color: #94a3b8; font-weight: 600; transition: 0.3s; }
+nav a:hover { color: #3b82f6; }
+
+/* Content Cards */
+.card, .intro {
+    background: #1e293b; padding: 30px; margin: 20px 0;
+    border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+}
+.intro { display: flex; align-items: center; gap: 20px; }
+.intro img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #3b82f6; }
+
+h4 { color: #3b82f6; margin-bottom: 15px; text-transform: uppercase; font-size: 0.9rem; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #334155; }
+
+/* Modal */
+.modal {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8); z-index: 2000;
+}
+.modal-content {
+    background: #1e293b; margin: 10% auto; padding: 30px;
+    width: 80%; max-width: 400px; border-radius: 12px; position: relative;
+}
+.close-btn { position: absolute; top: 10px; right: 20px; font-size: 28px; cursor: pointer; color: #fff; }
+.close-btn:hover { color: #3b82f6; }
+
+input, textarea { width: 100%; margin-bottom: 10px; padding: 12px; background: #0f172a; border: 1px solid #334155; color: white; border-radius: 5px; }
+button { background: #3b82f6; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; }
+
+footer { text-align: center; padding: 30px; color: #64748b; }

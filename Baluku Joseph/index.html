@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baluku Joseph | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo"><b>BJ</b></div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#" id="contactLink">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="intro">
+            <img src="jose.jpg" alt="Baluku Joseph">
+            <div>
+                <h1>Baluku Joseph</h1>
+                <p><b>Course:</b> Bachelor Of Information Technology and Computing</p>
+                <p><b>Campus:</b> Kyambogo University</p>
+            </div>
+        </section>
+
+        <section id="education" class="card">
+            <h4>EDUCATION BACKGROUND</h4>
+            <table>
+                <thead>
+                    <tr><th>PERIOD</th><th>INSTITUTION</th><th>AWARD</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>2024 - 2027</td><td>Kyambogo University</td><td>Bachelor's Degree</td></tr>
+                    <tr><td>2022 - 2023</td><td>Kibiito SS - FortPortal</td><td>UACE</td></tr>
+                    <tr><td>2017 - 2020</td><td>PEAS High School - Kasese</td><td>UCE</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="skills" class="card">
+            <h4>TECHNICAL SKILLS</h4>
+            <ul>
+                <li>Web Development (HTML, CSS, JS, Django)</li>
+                <li>Database Management (SQL/MySQL)</li>
+                <li>Technical Writing & Research</li>
+                <li>Hardware Troubleshooting</li>
+            </ul>
+        </section>
+
+        <section id="inspiration" class="card">
+            <h4>INSPIRATION</h4>
+            <p><em>"Technology is best when it brings people together."</em></p>
+            <p>I am driven by the belief that software should be an enabler for local community growth, which is why I founded <b>Kyezabu CyberHut</b> to bridge the digital gap in my area.</p>
+        </section>
+
+        <section id="gallery" class="card">
+            <h4>TECH ENVIRONMENT</h4>
+            <div class="image-grid">
+                <img src="code-snapshot.jpg" alt="Coding workspace" width="150">
+                <img src="server-room.jpg" alt="Networking hardware" width="150">
+            </div>
+        </section>
+
+        <section id="projects" class="card">
+            <h4>PROJECTS</h4>
+            <p><strong>Kyezabu CyberHut:</strong> A community-focused tech business.</p>
+            <p><strong>Matugga Hills SS:</strong> Development team member for the school website.</p>
+            <p><strong>Kyuhub:</strong> A secure student marketplace for Kyambogo University.</p>
+        </section>
+    </main>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h4>CONTACT ME</h4>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Baluku Joseph | IT & Computing Student</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $("#contactLink").click(function(e){ e.preventDefault(); $("#contactModal").fadeIn(); });
+            $(".close-btn, .modal").click(function(e){
+                if(e.target !== this && !$(e.target).hasClass('close-btn')) return;
+                $("#contactModal").fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>

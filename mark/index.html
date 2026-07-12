@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+    <header>
+        <p>Mark Cole.</p>
+        <nav>
+            <ul>
+                <li><a href="">Discord</a></li>
+                <li><a href="">WhatsApp</a></li>
+                <li><a href="">Twitter</a></li>
+            </ul>
+        </nav>
+        <button onclick="document.getElementById('contact-dialog').showModal()">Contact Me</button>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Hi, I'm Mark Cole - software engineer & Co-founder at Kian Rover specializing in React, Laravel and Grit. I build scalable, performant web applications that users love.</h2>
+            <img src="cole.jpg" alt="My Image" style="width: 200px;">
+        </section>
+
+        <section class="skills">
+
+            <div class="skills">
+                <div class="skill-content">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Frontend dev't</li>
+                    <li>Backend dev't</li>
+                    <li>Project Deployment</li>
+                    <li>Database Integration</li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="steps">
+                <h2>Stack</h2>
+                <ol>
+                   <li>React</li>
+                    <li>Laravel</li>
+                    <li>Postgres</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="education">
+
+            <div class="table">
+                <h2>Education Background</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Insititution</th>
+                            <th>Year</th>
+                            <th>Qualification</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>MUBS</td>
+                            <td>2026</td>
+                            <td>BBC</td>
+                        </tr>
+
+                        <tr>
+                            <td>Naalya SS Bweyogerere</td>
+                            <td>2019</td>
+                            <td>UACE</td>
+                        </tr>
+
+                        <tr>
+                            <td>SMACOL</td>
+                            <td>2014</td>
+                            <td>UCE</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <dialog id="contact-dialog">
+                <h2>Contact</h2>
+                <form action="">
+                    <input type="text" placeholder="Your Name"><br><br>
+                    <input type="email" placeholder="Your Email"><br><br>
+                    <button type="button">Send me message</button>
+                    <button onclick="document.getElementById('contact-form').close()">Close</button>
+                </form>
+            </dialog>
+
+        </section>
+    </main>
+<br><br>
+    <hr>
+    <br>
+    <footer>
+        <h3>Get in Touch.</h3>
+        <a href="mailto:markcole683@gmail.com">Mail me</a>
+        <p>&copy; 2026 Mark Cole</p>
+    </footer>
+    </div>
+
+</body>
+</html>

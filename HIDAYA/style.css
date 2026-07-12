@@ -102,12 +102,8 @@ dialog{
     border:none;
     border-radius:12px;
     padding:25px;
-    box-shadow:0 0 25px rgba(31, 30, 30, 0.4);
 }
 
-dialog::backdrop{
-    background:rgba(0,0,0,.6);
-}
 
 dialog input,
 dialog textarea{

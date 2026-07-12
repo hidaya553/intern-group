@@ -120,8 +120,8 @@
 
     </footer>
 
-    <dialog id="contactDialog">
-
+    <dialog id="contactDialog"> <dialog id="contactSection">
+    <div id="contactSection">
         <h2>Send Me a Message</h2>
 
         <form>
@@ -146,22 +146,11 @@
             <button type="button" onclick="closeDialog()">
                 Close
             </button>
-
+        
         </form>
-
+    </div>
     </dialog>
-
-    <script>
-
-        function openDialog() {
-            document.getElementById("contactDialog").showModal();
-        }
-
-        function closeDialog() {
-            document.getElementById("contactDialog").close();
-        }
-
-    </script>
+ 
 
 </body>
 </html>

@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5%;
+    padding: 0;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0be7e7;
+    padding: 15px 40px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.contact-btn {
+    background-color:orangered;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-btn:hover {
+    background-color: #0a0a0a;
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading nav a {
+    text-decoration: none;
+    margin: 15px;
+    color: #0be7e7;
+    font-weight: bold;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 220px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0be7e7;
+    color: white;
+}
+
+footer {
+    background-color: #0be7e7;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+

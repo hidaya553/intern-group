@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakiganda Munirah | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="top-header">
+
+        <nav class="top-nav">
+            <a href="https://wa.me/256740162349">WhatsApp</a>
+            <a href="mailto:munirahnakiganda@gmail.com">Email</a>
+            <a href="tel:+256740162349">Phone</a>
+        </nav>
+
+        <button class="contact-btn" onclick="openDialog()">
+            Contact Me
+        </button>
+
+    </header>
+
+    <div class="heading">
+
+        <h1>MY WEBSITE</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+<hr>
+<div class="banner">
+ <img src="nash.jpg" alt="my image"
+        class="profile" >
+<p>My name is Nakiganda Munirah, a second-year Bachelor in Information Technology <br>
+     student at the Islamic University in Uganda, Kampala Campus.<br> I am passionate about technology, enjoy learning new skills, and aspire to become a skilled IT professional.
+</p>
+</div> 
+<hr>
+
+ <div>
+
+        <h2 align="center">Education Background</h2>
+
+        <table border="1" align="center" cellpadding="10">
+
+            <thead>
+                <tr>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Award</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Islamic University in Uganda</td>
+                    <td>2025 - Present</td>
+                    <td>Bachelor in Information Technology</td>
+                </tr>
+<tr>
+                    <td>Ibun Masood High School</td>
+                    <td>2024</td>
+                    <td>UACE Certificate</td>
+                </tr>
+
+                <tr>
+                    <td>Ibun Masood High School</td>
+                    <td>2024</td>
+                    <td>UCE Certificate</td>
+                </tr>
+
+                <tr>
+                    <td>Hidden Treasure Primary School</td>
+                    <td>2016</td>
+                    <td>PLE Certificate</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>   
+    
+    <hr>
+
+    <footer>
+
+        <h3>Get In Touch</h3>
+
+        <p>Email: munirahnashirah@gmail.com</p>
+
+        <p>Phone: +256 740162349</p>
+
+        <p>&copy; 2026 Nakiganda Munirah. All Rights Reserved.</p>
+
+    </footer>
+
+    <!-- Contact Dialog -->
+    <dialog id="contactDialog">
+
+        <div class="contactSection">
+
+            <h2>Send Me a Message</h2>
+
+            <form>
+
+                <label>Full Name</label><br>
+                <input type="text" placeholder="Enter your name" required>
+
+                <br><br>
+
+                <label>Email Address</label><br>
+                <input type="email" placeholder="Enter your email" required>
+
+                <br><br>
+
+                <label>Your Message</label><br>
+                <textarea placeholder="Write your message here" rows="5" cols="40" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Send Message</button>
+
+                <button type="button" onclick="closeDialog()">
+                    Close
+                </button>
+
+            </form>
+
+        </div>
+
+    </dialog>
+
+    <script>
+        function openDialog() {
+            document.getElementById("contactDialog").showModal();
+        }
+
+        function closeDialog() {
+            document.getElementById("contactDialog").close();
+        }
+    </script>
+
+
+</body>

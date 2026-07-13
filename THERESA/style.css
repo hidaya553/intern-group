@@ -1,14 +1,14 @@
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#e1e2e4;
+    font-family:poppins 700, trebuchet ms, sans-serif;
+    background:#f4f7fc;
 }
 
 .top-header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:#66809b;
+    background:#0c8a64;
     padding:15px 40px;
 }
 
@@ -20,7 +20,7 @@ body{
 }
 
 .contact-btn{
-    background:#ff9800;
+    background:#79eb9f;
     color:white;
     border:none;
     padding:12px 22px;
@@ -41,7 +41,7 @@ body{
 .heading nav a{
     text-decoration:none;
     margin:15px;
-    color:#66809b;
+    color:#0c8a64;
     font-weight:bold;
 }
 
@@ -86,12 +86,12 @@ th,td{
 }
 
 tr:nth-child(even){
-    background:#f2f2f2;
+    background:#cdd6cd;
 }
 
 footer{
-    background:#66809b;
-    color:white;
+    background:#0c8a64;
+    color:rgb(255, 255, 255);
     text-align:center;
     padding:20px;
 
@@ -120,10 +120,10 @@ dialog button{
     border:none;
     border-radius:6px;
     cursor:pointer;
-    background:#003366;
+    background:#0c8a64;
     color:white;
 }
 
 dialog button:hover{
-    background:#0055aa;
+    background:#79eb9f;
 }

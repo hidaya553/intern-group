@@ -9,12 +9,11 @@
 
 <body>
 
-    
     <header class="top-header">
 
         <nav class="top-nav">
-            <a href="256741355953">WhatsApp</a>
-            <a href="hidayananteza89@gmail.com">Email</a>
+            <a href="https://wa.me/256741355953">WhatsApp</a>
+            <a href="mailto:hidayananteza89@gmail.com">Email</a>
             <a href="tel:+256741355953">Phone</a>
         </nav>
 
@@ -70,7 +69,7 @@
 
         <h2 align="center">Education Background</h2>
 
-        <table>
+        <table border="1" align="center" cellpadding="10">
 
             <thead>
                 <tr>
@@ -95,7 +94,7 @@
                 </tr>
 
                 <tr>
-                    <td>Kibuli Demonstration primary School</td>
+                    <td>Kibuli Demonstration Primary School</td>
                     <td>2016</td>
                     <td>PLE Certificate</td>
                 </tr>
@@ -120,37 +119,51 @@
 
     </footer>
 
-    <dialog id="contactDialog"> <dialog id="contactSection">
-    <div id="contactSection">
-        <h2>Send Me a Message</h2>
+    <!-- Contact Dialog -->
+    <dialog id="contactDialog">
 
-        <form>
+        <div class="contactSection">
 
-            <label>Full Name</label><br>
-            <input type="text" placeholder="Enter your name" r>
+            <h2>Send Me a Message</h2>
 
-            <br><br>
+            <form>
 
-            <label>Email Address</label><br>
-            <input type="email" placeholder="Enter your email" >
+                <label>Full Name</label><br>
+                <input type="text" placeholder="Enter your name" required>
 
-            <br><br>
+                <br><br>
 
-            <label>Your Message</label><br>
-            <textarea placeholder="Write your message here " required></textarea>
+                <label>Email Address</label><br>
+                <input type="email" placeholder="Enter your email" required>
 
-            <br><br>
+                <br><br>
 
-            <button type="submit">Send Message</button>
+                <label>Your Message</label><br>
+                <textarea placeholder="Write your message here" rows="5" cols="40" required></textarea>
 
-            <button type="button" onclick="closeDialog()">
-                Close
-            </button>
-        
-        </form>
-    </div>
+                <br><br>
+
+                <button type="submit">Send Message</button>
+
+                <button type="button" onclick="closeDialog()">
+                    Close
+                </button>
+
+            </form>
+
+        </div>
+
     </dialog>
- 
+
+    <script>
+        function openDialog() {
+            document.getElementById("contactDialog").showModal();
+        }
+
+        function closeDialog() {
+            document.getElementById("contactDialog").close();
+        }
+    </script>
 
 </body>
 </html>

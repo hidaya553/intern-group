@@ -71,3 +71,13 @@ footer { text-align: center; padding: 30px; color: #64748b; }
 .image-grid img:hover {
     transform: scale(1.05);
 }
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: maroon;
+    text-decoration: none;
+}
+.social-links a:hover {
+    color: #007bff; /* Changes color when hovering */
+}

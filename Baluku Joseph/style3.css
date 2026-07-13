@@ -52,3 +52,22 @@ input, textarea { width: 100%; margin-bottom: 10px; padding: 12px; background: #
 button { background: #3b82f6; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100%; }
 
 footer { text-align: center; padding: 30px; color: #64748b; }
+
+.image-grid {
+    display: flex;
+    gap: 20px; /* Space between images */
+    justify-content: center;
+}
+
+.image-grid img {
+    width: 300px;   
+    height: 200px;  
+    object-fit: cover; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+
+/*  a hover effect for a professional feel */
+.image-grid img:hover {
+    transform: scale(1.05);
+}
